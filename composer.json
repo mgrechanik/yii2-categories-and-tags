@@ -1,0 +1,44 @@
+{
+	"name": "mgrechanik/yii2-categories-and-tags",
+	"description": "Active Record hierarchical categories and tags for Yii2 framework",
+	"type": "yii2-extension",
+	"keywords": ["yii2", "yii 2", "categories", "tags", "hierarchical", "category", "tag", "tree", "active record", "universal module", "crud"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Mikhail Grechanik",
+			"email": "mike.grechanik@gmail.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/mgrechanik/yii2-categories-and-tags/issues?state=open",
+		"source": "https://github.com/mgrechanik/yii2-categories-and-tags"
+	},
+	"require": {
+		"yiisoft/yii2": "~2.0",
+                "mgrechanik/yii2-materialized-path" : "~1.0.0",
+                "mgrechanik/yii2-universal-module-sceleton" : "~1.0.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "7.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"mgrechanik\\yii2category\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"mgrechanik\\yii2category\\tests\\": "tests/"
+		}
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		}
+        ],     
+        "extra": {
+            "bootstrap": "mgrechanik\\yii2category\\tools\\Bootstrap"
+        }        
+}
