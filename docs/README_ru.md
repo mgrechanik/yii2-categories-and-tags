@@ -68,7 +68,7 @@ php yii migrate --migrationPath=@vendor/mgrechanik/yii2-categories-and-tags/src/
 
 Как говорилось [выше](#goal), данный модуль следует структуре *универсального модуля* и предоставляет при этом
 только страницы **backend**-а, то при его подключении укажите следующий режим (```mode```):
-```
+```php
     'modules' => [
         'category' => [
             'class' => 'mgrechanik\yii2category\Module',
@@ -148,7 +148,7 @@ AR модель и форма у нас не смешаны, поэтому де
 списка категорий с учетом отступа, чтобы отображалось как дерево 
 
 #### ```$categoryIndexView```, ```$categoryCreateView```, ```$categoryUpdateView```, ```$categoryFormView```, ```$categoryViewView``` <span id="setup-views"></span>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- указывают соответствующие **views**, которые модуль будет использовать. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Указывают соответствующие **views**, которые модуль будет использовать. 
 Формат смотрите в [документации](https://www.yiiframework.com/doc/api/2.0/yii-base-view#render()-detail)
 
 #### ```$redirectToIndexAfterCreate``` 

@@ -70,7 +70,7 @@ php yii migrate --migrationPath=@vendor/mgrechanik/yii2-categories-and-tags/src/
 
 As was mentioned [before](#goal) this module follows the approach of *universal module*, and since it gives you
 only **backend** pages when you set it up into your application specify the next ```mode``` :
-```
+```php
     'modules' => [
         'category' => [
             'class' => 'mgrechanik\yii2category\Module',
@@ -81,7 +81,7 @@ only **backend** pages when you set it up into your application specify the next
     ],
 ```
 
-Done. When you access ```/category``` page you will see all your category.
+Done. When you access ```/category``` page you will see all your categories in a form of a tree.
 
 ---
 
@@ -150,7 +150,7 @@ The ones of them with information which vary needs to be copied, changed as need
 considering indent needed to show categories as a tree
 
 #### ```$categoryIndexView```, ```$categoryCreateView```, ```$categoryUpdateView```, ```$categoryFormView```, ```$categoryViewView``` <span id="setup-views"></span>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the corresponding **views** for module to use. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The corresponding **views** for module to use. 
 For it's format look into [documentation](https://www.yiiframework.com/doc/api/2.0/yii-base-view#render()-detail)
 
 #### ```$redirectToIndexAfterCreate``` 
