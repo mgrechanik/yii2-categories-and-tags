@@ -133,6 +133,11 @@ This module has an opportunity to set up [which views to use](#setup-views).
 
 The ones of them with information which vary needs to be copied, changed as needed and set up to module.
 
+#### Ready to use examples of this module variations <span id="custom-ar-examples"></span>
+
+Nowadays there are the next variations of this module:
+* [SEO categories](https://github.com/mgrechanik/yii2-seo-categories)
+
 ---
 
 ## Module settings <span id="settings"></span>
